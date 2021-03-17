@@ -65,11 +65,11 @@ header > .container:first-child {
     padding-bottom: 25px;
     transition: all 0.3s ease;
 }
-.nav-up .menu li:nth-child(1) {
+.nav-up .menu1 li:nth-child(1) {
     color: #2057AC;
     border-color: #2057AC;
 }
-.nav-up .menu li:hover {
+.nav-up .menu1 li:hover {
     border-color: #2057AC;
     color: #2057AC;
 }
