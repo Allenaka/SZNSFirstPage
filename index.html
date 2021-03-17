@@ -45,7 +45,33 @@
             </nav>
         </div>
         <div class="container">
-            <nav class="nav-down"></nav>
+            <nav class="nav-down">
+                <ul class="for-geren">
+                    <li>信通卡</li>
+                    <li>信用卡</li>
+                    <li>个人贷款</li>
+                    <li>投资理财</li>
+                    <li>电子银行</li>
+                    <li>外汇服务</li>
+                    <li>便利服务</li>
+                    <li>出国留学金融</li>
+                    <li>产品信息查询平台</li>
+                    <li>存款保险</li>
+                </ul>
+                <ul class="for-qiye">
+                    <li>贷款融资</li>
+                    <li>结算业务</li>
+                    <li>中间业务</li>
+                    <li>票据业务</li>
+                    <li>跨境金融</li>
+                    <li>公司理财</li>
+                    <li>同业金融</li>
+                </ul>
+                <ul class="for-puhui">
+                    <li>特色产品</li>
+                    <li>案例分享</li>
+                </ul>
+            </nav>
         </div>
     </header>
     <header class="mobile-header">
@@ -65,10 +91,31 @@
         </div>
     </header>
     <section>
-
+        <div class="banner">
+            <img src="./imgs/dashujv.jpg" alt="" class="for-pc">
+            <img src="./imgs/dashujv1.jpg" alt="" class="for-mobile">
+        </div>
     </section>
     <section>
-
+        <div class="list1">
+            <ul>
+                <a href="">
+                    <li>
+                        <h3 class="service">转账汇款</h3>
+                        <p class="detail">到账快，5折手续费</p>
+                    </li>
+                </a><a href="">
+                    <li><h3 class="service">转账汇款</h3>
+                        <p class="detail">到账快，5折手续费</p></li>
+                </a><a href="">
+                    <li></li>
+                </a><a href="">
+                    <li></li>
+                </a><a href="">
+                    <li></li>
+                </a>
+            </ul>
+        </div>
     </section>
     <section>
 
@@ -76,5 +123,34 @@
     <footer>
 
     </footer>
+
+    <script>
+    var bind = (function() {
+        var menu = document.getElementsByClassName('menu1')[0]
+        var menuItem = menu.getElementsByTagName('li');
+        var nav = document.getElementsByClassName('nav-down')[0].getElementsByTagName('ul');
+        menuItem[0].onmouseover = function() {
+            nav[0].style.display = "block";
+        }
+        menuItem[1].onmouseover = function() {
+            nav[0].style.display = "none";
+            nav[1].style.display = "block"
+        }
+        menuItem[2].onmouseover = function() {
+            nav[0].style.display = "none";
+            nav[1].style.display = "none";
+        }
+        menu.onmouseleave = function(e) {
+
+            if (e.offsetX < 2 || e.offsetX > 214 || e.offsetY < 1)  {
+                nav[0].style.display = "block";
+            }
+            
+        }
+        document.getElementsByClassName('nav-down')[0].onmouseleave = function() {
+            nav[0].style.display = "block";
+        }
+    })();  
+    </script>
 </body>
 </html>
