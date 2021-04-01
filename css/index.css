@@ -124,6 +124,7 @@ header .btn-search:hover {
     width: 252px;
     right: -50px;
     top: 50px;
+    z-index: 99;
 }
 .tooltip:hover{
     display: block;
